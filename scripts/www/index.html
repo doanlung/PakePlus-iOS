@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="text-align:center;font-family:Arial;padding:20px">
+
+<h2 style="font-size:30px">TÍNH MẬT KHẨU</h2>
+
+<input id="a" type="tel" inputmode="numeric" placeholder="Nhập 9 số..." style="font-size:30px;text-align:center;width:90%;padding:10px;margin-bottom:10px;border:2px solid #000;border-radius:8px">
+<br>
+
+<button onclick="let v=document.getElementById('a').value;if(v.length!=9){alert('Nhap du 9 so!');return;}let r=Math.round((v.slice(0,3)-7)/2)+''+Math.round((v.slice(3,6)-7)/6)+''+Math.round((v.slice(6,9)-7)/9);document.getElementById('b').value=r" style="font-size:25px;padding:10px 40px;margin-bottom:20px;background:#007bff;color:white;border:none;border-radius:8px">TÍNH</button>
+<br>
+
+<input id="b" readonly placeholder="Kết quả" style="font-size:40px;text-align:center;width:90%;padding:10px;color:red;font-weight:bold;border:2px dashed #ff0000;border-radius:8px;background:#fff0f0">
+
+</body>
+</html>
